@@ -1,0 +1,18 @@
+name       : gxmessage
+version    : 3.4.3
+release    : 1
+source     :
+    - https://ftp.gnu.org/gnu/gxmessage/gxmessage-3.4.3.tar.gz : db4e1655fc58f31e5770a17dfca4e6c89028ad8b2c8e043febc87a0beedeef05
+license    : GPL-3.0
+component  : system.utils
+summary    : Gxmessage is an xmessage clone for GTK based desktops
+description: |
+    Gxmessage is an xmessage clone for GTK based desktops
+builddeps  :
+    - pkgconfig(gtk+-3.0)
+setup      : |
+    %configure
+build      : |
+    %make
+install    : |
+    %make_install
